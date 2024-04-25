@@ -34,25 +34,7 @@ class HomeBody extends StatelessWidget{
             ),
           ),
           
-      bottomNavigationBar: BottomNavigationBar(
-          items: const <BottomNavigationBarItem>[
-             BottomNavigationBarItem(
-                label: 'fytfy',
-                icon:  Icon(Icons.home,color: Colors.black,)),
-             BottomNavigationBarItem(
-               label: 'fytfy',
-                icon:  Icon(Icons.terrain,color: Colors.black,)),
-             BottomNavigationBarItem(
-               label: 'fytfy',
-                icon:  Icon(Icons.bluetooth,color: Colors.black,)),
-             BottomNavigationBarItem(
-                label: 'fytfy',
-                icon:  Icon(Icons.cake,color: Colors.black,)),
-             BottomNavigationBarItem(
-               label: 'fytfy',
-                icon:  Icon(Icons.edit,color: Colors.black,)),
-          ],
-        ),
+
     );
   }
 }
