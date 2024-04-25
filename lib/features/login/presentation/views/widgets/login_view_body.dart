@@ -8,12 +8,13 @@ class LoginViewBody extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     
-    return CustomScrollView(
+    return  CustomScrollView(
       slivers: [
         SliverFillRemaining(
           child: Scaffold(
       backgroundColor: Colors.white,
-      body: Padding(
+      body: SingleChildScrollView(
+      child:Padding(
         padding: const EdgeInsets.symmetric(vertical: 72,horizontal: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
@@ -53,9 +54,11 @@ class LoginViewBody extends StatelessWidget{
       ),
     ),
         )
-      ],
+    )],
+    
     );
 
+    
     
   }
 }
