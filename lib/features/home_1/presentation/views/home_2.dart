@@ -8,6 +8,7 @@ class Home2 extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
+    //islam kamal
     return const Scaffold(
       backgroundColor: Color(0xff0E81CF),
       body: Padding(
