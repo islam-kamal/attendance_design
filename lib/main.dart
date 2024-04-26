@@ -1,7 +1,4 @@
-
 import 'package:flutter/material.dart';
-
-
 import 'features/BottomNavigationBar/bottom_navigation_bar_widget.dart';
 
 void main() {
@@ -9,7 +6,6 @@ void main() {
 }
 class MySons extends StatelessWidget{
   const MySons({Key?key}) : super(key:key);
-
   @override
   Widget build(BuildContext context) {
     
