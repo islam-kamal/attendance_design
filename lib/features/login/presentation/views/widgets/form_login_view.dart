@@ -44,7 +44,7 @@ class _FormLoginViewState extends State<FormLoginView> {
                mainAxisAlignment: MainAxisAlignment.end,
                crossAxisAlignment: CrossAxisAlignment.end,
                children: [
-                 Text("email00"),
+                 Text("كلمة المرور"),
                  TextFormField(
 
                    textAlign: TextAlign.right,

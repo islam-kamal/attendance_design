@@ -21,8 +21,9 @@ class Home3 extends StatelessWidget{
                 WorkHoursView(
                   color: Color.fromARGB(255, 226, 113, 113),
                    baseText: 'تأخير',
-                    style:TextStyle(color: Colors.black) ,
-                     text: 'عن الموعد المحدد',),
+                     text: 'عن الموعد المحدد',
+                  textColor: Colors.red,
+                ),
               ],
             ),
           ),

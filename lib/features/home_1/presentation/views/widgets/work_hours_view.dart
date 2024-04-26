@@ -8,11 +8,12 @@ class WorkHoursView extends StatelessWidget {
       required this.color,
       required this.baseText,
       required this.text,
-      required TextStyle style});
+        required this.textColor});
 
   final Color color;
   final String baseText;
   final String text;
+  final Color textColor;
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -51,7 +52,12 @@ class WorkHoursView extends StatelessWidget {
                 Image.asset(
                   'images/3dicons.png',
                 ),
-                Text(baseText),
+                Text(
+                  baseText,
+                  style: TextStyle(
+                    color: textColor
+                  ),
+                ),
                 Text(text),
               ],
             ),

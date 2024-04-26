@@ -21,8 +21,8 @@ class Home2 extends StatelessWidget{
                 WorkHoursView(
                   color: Colors.white,
                    baseText: 'متبقي5:26 دقائق',
-                    style:TextStyle(color: Colors.black) ,
-                     text: ' علي موعد الحضور',),
+                     text: ' علي موعد الحضور',
+                  textColor:  Colors.white,),
               ],
             ),
           ),
