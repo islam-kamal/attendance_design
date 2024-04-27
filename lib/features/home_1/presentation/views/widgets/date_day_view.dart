@@ -10,36 +10,43 @@ class DatesDayView extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Expanded(child: Container(
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height * 0.3419,
+      //height: MediaQuery.of(context).size.height * 0.3 ,
 
       decoration: const BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(topRight: Radius.circular(25),topLeft: Radius.circular(25))
       ),
-      child: Column(
-        children: [
-          Padding(padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 10),
-            child: Container(
-              height: 75,
-              child: ListView.builder(
-                  itemCount: 31,
-                  shrinkWrap: true,
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 10),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 15),
+                child: Container(
+                  height: 75,
 
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) {
-                    return const Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 8),
-                      child: TimesOfWorkListView(),
-                    );
-                  }),
-            ),
-          ),
-          const AttendanceDay(),
-        ],
+                   child: ListView.builder(
+                      itemCount: 31,
+                      shrinkWrap: true,
+
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 8),
+                          child: TimesOfWorkListView(),
+                        );
+                      }),
+                ),
+              ),
+              ),
+
+            const AttendanceDay(),
+          ],
+        ),
       ),
-    );
+    ));
   }
 }
 
