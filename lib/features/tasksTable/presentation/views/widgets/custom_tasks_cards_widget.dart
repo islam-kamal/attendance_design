@@ -26,7 +26,7 @@ class _CustomTasksCardsState extends State<CustomTasksCards> {
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          /*Checkbox(
+          Checkbox(
             tristate: true,
             value: true,
             onChanged: (bool? Value){
@@ -35,7 +35,7 @@ class _CustomTasksCardsState extends State<CustomTasksCards> {
               });
             },
             activeColor: const Color(0xff01D9AC),
-          ),*/
+          ),
           Column(
             children: [
               Text(

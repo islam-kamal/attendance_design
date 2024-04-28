@@ -6,6 +6,6 @@ class TasksTableView extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return  TasksTableViewBody();
+    return  const TasksTableViewBody();
   }
 }

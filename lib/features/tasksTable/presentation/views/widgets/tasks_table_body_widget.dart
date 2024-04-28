@@ -19,34 +19,36 @@ class TasksTableViewBody extends StatelessWidget{
             const CustomDaysListView(),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25),
-             child: Row(
-               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Icon(Icons.add,size: 28,),
-                Column(
-                  children: [
-                    Text('مهام اليوم',style: Styles.textStyle16.copyWith(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold
-                    ),),
-                    const Opacity(
-                        opacity: 0.9,
-                        child: Text('3 مهام هذا اليوم',style: Styles.textStyle16,)),
-                  ],
-                )
-              ],
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Icon(Icons.add,size: 28,),
+                  Column(
+                    children: [
+                      Text('مهام اليوم',style: Styles.textStyle16.copyWith(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold
+                      ),),
+                      const Opacity(
+                          opacity: 0.9,
+                          child: Text('3 مهام هذا اليوم',style: Styles.textStyle16,)),
+                    ],
+                  )
+                ],
+              ),
             ),
-            ),
-            ListView.builder(
-                shrinkWrap: true,
-                scrollDirection: Axis.vertical,
-                itemBuilder: (context, index) {
-                  return const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 8),
-                    child: CustomTasksCards(),
 
-                  );
-                }),
+            Text('kkkkkkkkkkkkkkkjhzvch',style: Styles.textStyle28,)
+
+            // ListView.builder(
+            //     shrinkWrap: true,
+            //     itemBuilder: (context, index) {
+            //       return const Padding(
+            //         padding: EdgeInsets.symmetric(horizontal: 8),
+            //         child: CustomTasksCards(),
+            //
+            //       );
+            //     }),
           ],
         ),
       ),

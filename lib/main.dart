@@ -17,7 +17,7 @@ class MySons extends StatelessWidget{
       navigatorKey: navigatorKey,
       theme: ThemeData.light(),
       title: 'my title',
-      home:   TasksTableViewBody(),
+      home:   const TasksTableViewBody(),
       debugShowCheckedModeBanner: false,
     );
   }
